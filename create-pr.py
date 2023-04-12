@@ -15,4 +15,4 @@ print(title)
 prTitle = projectCode + '-' + ticketNumber + ' ' + title
 
 os.system("git push -u origin " + branchName)
-# os.system("gh pr create --draft --title " + prTitle)
+os.system("gh pr create --draft --fill --title '" + prTitle + "'")
